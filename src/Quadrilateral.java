@@ -16,7 +16,7 @@ abstract public class Quadrilateral {
     }
 
     public static Trapezium[] parFilter(Quadrilateral[] vs) {
-        return new Trapezium[] {new Trapezium()};
+        return new Trapezium[] {new Trapezium(new Vec2D(1,1), 2,2, 2)};
     }
 
     public Vec2D getA() {return pA;}
@@ -28,7 +28,5 @@ abstract public class Quadrilateral {
     public double getBC() {return Math.sqrt(((pB.getX()-pC.getX())*(pB.getX()-pC.getX())) + ((pB.getY()-pC.getY())*(pB.getY()-pC.getY())));}
     public double getCD() {return Math.sqrt(((pC.getX()-pD.getX())*(pC.getX()-pD.getX())) + ((pC.getY()-pD.getY())*(pC.getY()-pD.getY())));}
     public double getDA() {return Math.sqrt(((pD.getX()-pA.getX())*(pD.getX()-pA.getX())) + ((pD.getY()-pA.getY())*(pD.getY()-pA.getY())));}
-
-
 
 }
